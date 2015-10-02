@@ -16,6 +16,7 @@ abstract class AbstractDigits implements Number2Words {
 	final static String SPACE = " ";
 	final static String AND = " and ";
 	
+	//the number to be converted
 	private final int number;
 	private String characters;
 

@@ -12,6 +12,7 @@ import java.text.NumberFormat;
  */
 abstract class AbstractDigits implements Number2Words {
 
+	// a space separator
 	final static String SPACE = " ";
 	final static String AND = " and ";
 	

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.worldpay.number;
+package com.lawrence.number;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

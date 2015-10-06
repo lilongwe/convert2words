@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.worldpay.number;
+package com.lawrence.number;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.worldpay.number.SixDigits;
+import com.lawrence.number.SixDigits;
 
 /**
  * @author lawrence

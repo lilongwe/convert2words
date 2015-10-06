@@ -1,4 +1,4 @@
-package com.worldpay.number;
+package com.lawrence.number;
 
 public interface Number2Words {
 

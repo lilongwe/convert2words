@@ -1,17 +1,17 @@
 /**
  * 
  */
-package com.worldpay.number;
+package com.lawrence.number;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.worldpay.number.NineDigits;
-import com.worldpay.number.Number2Words;
-import com.worldpay.number.Number2WordsFactory;
-import com.worldpay.number.SixDigits;
-import com.worldpay.number.ThreeDigits;
+import com.lawrence.number.NineDigits;
+import com.lawrence.number.Number2Words;
+import com.lawrence.number.Number2WordsFactory;
+import com.lawrence.number.SixDigits;
+import com.lawrence.number.ThreeDigits;
 
 /**
  * @author lawrence

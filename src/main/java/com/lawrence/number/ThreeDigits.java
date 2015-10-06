@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.worldpay.number;
+package com.lawrence.number;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;

@@ -1,12 +1,14 @@
 /**
  * 
  */
-package com.worldpay.number;
+package com.lawrence.number;
 
 import java.text.Format;
 import java.text.NumberFormat;
 
 /**
+ * AbstractDigits is an abstract class for all Digits
+ * 
  * @author lawrence
  *
  */
@@ -18,6 +20,7 @@ abstract class AbstractDigits implements Number2Words {
 	
 	//the number to be converted
 	private final int number;
+	//the number as a string
 	private String characters;
 
 	
@@ -36,6 +39,9 @@ abstract class AbstractDigits implements Number2Words {
 		return number;
 	}
 	
+	/**
+	 * @return the NumberFormat to be used for formatting the number
+	 */
 	protected abstract NumberFormat getFormat();
 		
 	protected String getCharacters() {

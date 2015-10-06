@@ -7,6 +7,22 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 /**
+ * 
+ * This class represents36 digits, essentially a zero upwards to 
+ * 1 thousand - 1
+ * 
+ * i.e.
+ * 		> 0 && < 10^3 -1
+ * 
+ * The class represents the basics of representing numbers as words and
+ * any digits greater that three are composed of multiples of this class.
+ * 
+ * For example, a million would be represented by three ThreeDigits.
+ * 
+ * @author lawrence
+ *
+ */
+/**
  * @author lawrence
  *
  */
@@ -45,6 +61,12 @@ class ThreeDigits extends AbstractDigits {
 		return words;
 	}
 	
+	/**
+	 * Converts the number to words recursively. 
+	 * 
+	 * @param toWords	the builder to append to
+	 * @param number	the number to convert
+	 */
 	protected void createWords(StringBuilder toWords, int number) {
 		if (number > 0) {
 			

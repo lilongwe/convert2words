@@ -7,6 +7,15 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 /**
+ * 
+ * This class represents 6 digits, essentially a thousand upwards to 
+ * 1 million - 1
+ * 
+ * i.e.
+ * 		> 10^3 && < 10^6 -1
+ * 
+ * The class represents the digits by composing two ThreeDigits 
+ * 
  * @author lawrence
  *
  */
@@ -23,6 +32,11 @@ class SixDigits extends AbstractDigits {
 		super(number);
 	}
 	
+	/**
+	 * The first Three Digits os the number
+	 * 
+	 * @return the first ThreeDigits of the number
+	 */
 	protected ThreeDigits getFirstThree() {
 		if (firstThree == null) {
 			String c = getCharacters().substring(0, 3);
@@ -32,6 +46,11 @@ class SixDigits extends AbstractDigits {
 		return firstThree;
 	}
 	
+	/**
+	 * The last three digits represented as ThreeDigits
+	 * 
+	 * @return the last ThreDigits of the number
+	 */
 	protected ThreeDigits getLastThree() {
 		if (lastThree == null) {
 			String c = getCharacters().substring(3);

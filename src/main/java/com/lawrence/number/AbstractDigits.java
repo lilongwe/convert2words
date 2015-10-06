@@ -7,8 +7,25 @@ import java.text.Format;
 import java.text.NumberFormat;
 
 /**
- * AbstractDigits is an abstract class for all Digits
+ * AbstractDigits is an abstract class for all Digits. Digits are a combination of
+ * numbers starting with 0 and the then increasing by 10^3.
  * 
+ * e.g 
+ * 		0
+ * 		10^3 = 1000
+ * 		10^6 = 1000000
+ * 		10^9 = 1000000000
+ * 
+ * This class represents the actual number and also the representation of the numbers
+ * as characters. 
+ * 
+ * AbstractDigits implements Number2Words which facilitates the conversion of the 
+ * numbers to words in English
+ * 
+ * @author lawrence
+ *
+ */
+/**
  * @author lawrence
  *
  */
@@ -16,6 +33,7 @@ abstract class AbstractDigits implements Number2Words {
 
 	// a space separator
 	final static String SPACE = " ";
+	// the and separator
 	final static String AND = " and ";
 	
 	//the number to be converted
@@ -25,7 +43,10 @@ abstract class AbstractDigits implements Number2Words {
 
 	
 	/**
+	 * Default constructor with an argument of the number to be used
+	 * Protected so it cannot be used outside of context.
 	 * 
+	 * @param	number 	the number or digits to be represented
 	 */
 	protected AbstractDigits(int number) {
 		this.number = number;
@@ -40,10 +61,19 @@ abstract class AbstractDigits implements Number2Words {
 	}
 	
 	/**
+	 * The number needs to be padded in case it is smaller than the maximum size of the digits.
+	 * Formatting it to a string aids that and makes it easier to traverse the individual digits.
+	 * 
 	 * @return the NumberFormat to be used for formatting the number
 	 */
 	protected abstract NumberFormat getFormat();
 		
+	
+	/**
+	 * A cached representation of the number as a string formatted using getFormat()
+	 * 
+	 * @return	the number as a sring
+	 */
 	protected String getCharacters() {
 		
 		if (characters == null) {
@@ -55,6 +85,12 @@ abstract class AbstractDigits implements Number2Words {
 		return characters;
 	}
 	
+	
+	/**
+	 * Setter for the characters
+	 * 
+	 * @param characters the number as characters
+	 */
 	protected final void setCharacters(String characters) {
 
 		this.characters = characters;

@@ -60,8 +60,9 @@ class SixDigits extends AbstractDigits {
 		return lastThree;
 	}
 	
+
 	/* (non-Javadoc)
-	 * @see test.Number2Words#getWords()
+	 * @see com.lawrence.number.Number2Words#getWords()
 	 */
 	public String getWords() {
 		if (words == null) {
@@ -90,8 +91,9 @@ class SixDigits extends AbstractDigits {
 		return words;
 	}
 
+
 	/* (non-Javadoc)
-	 * @see test.AbstractDigits#getFormat()
+	 * @see com.lawrence.number.AbstractDigits#getFormat()
 	 */
 	@Override
 	protected NumberFormat getFormat() {

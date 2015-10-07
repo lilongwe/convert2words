@@ -54,8 +54,9 @@ abstract class AbstractDigits implements Number2Words {
 		this.number = number;
 	}
 
+
 	/* (non-Javadoc)
-	 * @see test.Number2Words#getNumber()
+	 * @see com.lawrence.number.Number2Words#getNumber()
 	 */
 	public int getNumber() {
 

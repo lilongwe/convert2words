@@ -46,7 +46,7 @@ class ThreeDigits extends AbstractDigits {
 	
 
 	/* (non-Javadoc)
-	 * @see test.Number2Words#getWords()
+	 * @see com.lawrence.number.Number2Words#getWords()
 	 */
 	public String getWords() {
 		
@@ -97,8 +97,9 @@ class ThreeDigits extends AbstractDigits {
 		}
 	}
 
+
 	/* (non-Javadoc)
-	 * @see test.AbstractDigits#getFormat()
+	 * @see com.lawrence.number.AbstractDigits#getFormat()
 	 */
 	@Override
 	protected NumberFormat getFormat() {

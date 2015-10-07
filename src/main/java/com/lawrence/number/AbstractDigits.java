@@ -32,9 +32,9 @@ import java.text.NumberFormat;
 abstract class AbstractDigits implements Number2Words {
 
 	// a space separator
-	final static String SPACE = " ";
+	protected final static String SPACE = " ";
 	// the and separator
-	final static String AND = " and ";
+	protected final static String AND = " and ";
 	
 	//the number to be converted
 	private final int number;

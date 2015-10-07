@@ -22,9 +22,9 @@ import java.text.NumberFormat;
  */
 class NineDigits extends AbstractDigits {
 
-	final static NumberFormat FORMAT = new DecimalFormat("000000000");
+	private final static NumberFormat FORMAT = new DecimalFormat("000000000");
 	// million descriptor as a string
-	final static String MILLION = " million";
+	protected final static String MILLION = " million";
 	
 	private String words;
 	private ThreeDigits firstThree;

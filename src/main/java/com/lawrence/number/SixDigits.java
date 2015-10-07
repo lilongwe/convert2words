@@ -21,8 +21,8 @@ import java.text.NumberFormat;
  */
 class SixDigits extends AbstractDigits {
 
-	final static NumberFormat FORMAT = new DecimalFormat("000000");
-	final static String THOUSAND = " thousand";
+	private final static NumberFormat FORMAT = new DecimalFormat("000000");
+	protected final static String THOUSAND = " thousand";
 	
 	private ThreeDigits firstThree;
 	private ThreeDigits lastThree;

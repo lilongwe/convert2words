@@ -29,14 +29,14 @@ import java.text.NumberFormat;
 class ThreeDigits extends AbstractDigits {
 	
 	
-	final static String UP_TO_19[] = {"zero","one","two","three","four","five","six","seven","eight","nine",
+	protected final static String UP_TO_19[] = {"zero","one","two","three","four","five","six","seven","eight","nine",
 			"ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
 
-	final static String MULTIPLES_OF_10[] = {"","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"};
+	protected final static String MULTIPLES_OF_10[] = {"","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"};
 
-	final static String HUNDRED = " hundred";
+	protected final static String HUNDRED = " hundred";
 	
-	final static NumberFormat FORMAT = new DecimalFormat("000");
+	private final static NumberFormat FORMAT = new DecimalFormat("000");
 	
 	private String words;
 	

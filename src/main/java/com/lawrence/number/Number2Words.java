@@ -16,6 +16,13 @@ public interface Number2Words {
 	 *	1105		one thousand one hundred and five
 	 *	56945781	fifty six million nine hundred and forty five thousand seven hundred and eighty one
 	 *	999999999	nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine.
+	 *
+	 * @author lawrence
+	 * 
+	 **/
+	
+	/**
+	 * The number converted to words using the english vernacular
 	 * 
 	 * @return the words as a string
 	 */

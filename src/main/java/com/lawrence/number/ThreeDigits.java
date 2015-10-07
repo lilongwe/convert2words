@@ -22,10 +22,6 @@ import java.text.NumberFormat;
  * @author lawrence
  *
  */
-/**
- * @author lawrence
- *
- */
 class ThreeDigits extends AbstractDigits {
 	
 	

@@ -26,10 +26,6 @@ import java.text.NumberFormat;
  * @author lawrence
  *
  */
-/**
- * @author lawrence
- *
- */
 abstract class AbstractDigits implements Number2Words {
 
 	// a space separator

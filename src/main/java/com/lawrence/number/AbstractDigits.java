@@ -16,6 +16,7 @@ import java.text.NumberFormat;
  * 		10^6 = 1000000
  * 		10^9 = 1000000000
  * 
+ * 
  * This class represents the actual number and also the representation of the numbers
  * as characters. 
  * 

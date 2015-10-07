@@ -24,7 +24,7 @@ public interface Number2Words {
 	/**
 	 * The representation of the number as the raw integer
 	 * 
-	 * @return the number
+	 * @return the number as an integer
 	 */
 	int getNumber();
 }

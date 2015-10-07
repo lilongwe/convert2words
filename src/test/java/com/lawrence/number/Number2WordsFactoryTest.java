@@ -34,6 +34,24 @@ public class Number2WordsFactoryTest {
 		Number2WordsFactory.getNoneCachedConverter(Number2WordsFactory.UPPER_LIMIT + 1);		
 	}
 	
+	@Test()
+	public void testEquality() {
+		
+		Number2Words anExample = Number2WordsFactory.getNoneCachedConverter(123456);
+		Number2Words anotherExample = Number2WordsFactory.getNoneCachedConverter(123456);
+		
+		Assert.assertEquals(anExample, anotherExample);
+	}
+	
+	@Test()
+	public void testFailedEquality() {
+		
+		Number2Words anExample = Number2WordsFactory.getNoneCachedConverter(123456);
+		Number2Words anotherExample = Number2WordsFactory.getNoneCachedConverter(12345);
+		
+		Assert.assertNotEquals(anExample, anotherExample);
+	}
+	
 	@Test
 	public void testThreeDigitsClassReturned() {
 		Number2Words result = Number2WordsFactory.getNoneCachedConverter(123);

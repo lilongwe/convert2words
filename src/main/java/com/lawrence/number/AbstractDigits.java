@@ -34,6 +34,7 @@ abstract class AbstractDigits implements Number2Words {
 
 	// a space separator
 	protected final static String SPACE = " ";
+	protected final static String DOUBLE_SPACE = "  ";
 	// the and separator
 	protected final static String AND = " and ";
 	

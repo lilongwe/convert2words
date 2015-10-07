@@ -83,7 +83,7 @@ class ThreeDigits extends AbstractDigits {
 				int reminder = number - (s * 10);
 				
 				if (reminder > 0) {
-					toWords.append(" ").append(UP_TO_19[reminder]);
+					toWords.append(SPACE).append(UP_TO_19[reminder]);
 				}
 			}
 			else {

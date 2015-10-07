@@ -87,7 +87,7 @@ class NineDigits extends AbstractDigits {
 				builder.append(getLastSix().getWords());
 			}
 			
-			words = builder.toString().replace("  ", " ");
+			words = builder.toString().replace(DOUBLE_SPACE, SPACE);
 		}
 
 		return words;
